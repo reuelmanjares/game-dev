@@ -1,0 +1,584 @@
+[gd_scene format=4 uid="uid://cfba8seoem6qy"]
+
+[ext_resource type="Texture2D" uid="uid://d4h0wvm14elx6" path="res://rooms/school.png" id="1_v3cpt"]
+[ext_resource type="Script" uid="uid://bwgw1031nc2r" path="res://Script/School.gd" id="2_c0jbl"]
+[ext_resource type="Texture2D" uid="uid://c6xnj4d37b56a" path="res://school_s_objects/bookshelf.png" id="2_ixv6b"]
+[ext_resource type="Texture2D" uid="uid://c1fpkgaifvkrh" path="res://school_s_objects/rizal_portrait.png" id="3_6qn5t"]
+[ext_resource type="Texture2D" uid="uid://c8jsi3sb5iwna" path="res://school_s_objects/school_anthem_board.png" id="4_iwj2h"]
+[ext_resource type="Texture2D" uid="uid://biqb325vpdtc6" path="res://school_s_objects/trash_bin_side.png" id="5_5fwij"]
+[ext_resource type="Texture2D" uid="uid://ck0dn0x0a0ce4" path="res://school_s_objects/vision_mission_board.png" id="6_ardt8"]
+[ext_resource type="PackedScene" uid="uid://dx7qm1d4tw1ti" path="res://player.tscn" id="7_6qn5t"]
+[ext_resource type="Texture2D" uid="uid://xgcx4p0kyokx" path="res://tiles/4_stone_tile_terrain_3x3.png" id="8_iwj2h"]
+[ext_resource type="Texture2D" uid="uid://d1x542sna35a5" path="res://school_s_objects/black_board.png" id="10_ryu2u"]
+[ext_resource type="Texture2D" uid="uid://dresd4y3asi8t" path="res://school_s_objects/teacher_s_desk.png" id="11_ryu2u"]
+[ext_resource type="Texture2D" uid="uid://rqmsnlc8x50j" path="res://school_s_objects/electricfan.png" id="11_t6jpy"]
+[ext_resource type="Texture2D" uid="uid://b4pxof2rvsh4d" path="res://school_s_objects/teacher_s_chair.png" id="12_t6jpy"]
+[ext_resource type="Shader" uid="uid://bj5lm0mom47dn" path="res://Door.gdshader" id="13_7s71n"]
+[ext_resource type="Texture2D" uid="uid://co0a1v8wq2fuk" path="res://character/school_door.png" id="13_7tnvl"]
+[ext_resource type="Script" uid="uid://cf44guco6yfmo" path="res://Script/touchmove.gd" id="13_t6jpy"]
+[ext_resource type="Shader" uid="uid://dbu34g1h4kvux" path="res://Chair.gdshader" id="15_w6isl"]
+[ext_resource type="Texture2D" uid="uid://rea7cdfpx2h4" path="res://character/CChar.png" id="18_ox4go"]
+[ext_resource type="Texture2D" uid="uid://cs0b1e8ud5it6" path="res://decision box/teacher_women_teaching.png" id="19_4wnxl"]
+[ext_resource type="Texture2D" uid="uid://dmlu8pi2x31f0" path="res://decision box/sleeping.png" id="20_bx6cq"]
+[ext_resource type="Texture2D" uid="uid://dwyryfkxl57h4" path="res://character/Left-Facing Pixel Art Teacher Sprite.png" id="20_etdhx"]
+[ext_resource type="Texture2D" uid="uid://cu6o3v1yf060l" path="res://decision box/snacks.png" id="21_etdhx"]
+[ext_resource type="Texture2D" uid="uid://bv580l2qy75ea" path="res://school_s_objects/chair1.png" id="22_ka5dt"]
+[ext_resource type="Texture2D" uid="uid://kwuucqij6uyu" path="res://character/ash.png" id="23_7tnvl"]
+[ext_resource type="Texture2D" uid="uid://q5uyfbqt803y" path="res://character/mito.png" id="24_t5ufn"]
+[ext_resource type="Texture2D" uid="uid://dcpdx7ycadb1i" path="res://character/other character.png" id="25_mbbul"]
+[ext_resource type="Texture2D" uid="uid://dg30x8kg6rvlf" path="res://character/gia.png" id="26_g3300"]
+[ext_resource type="Texture2D" uid="uid://b653qo4ri62rl" path="res://character/arwind.png" id="27_5dt0h"]
+[ext_resource type="Texture2D" uid="uid://dcohfhu2sjobj" path="res://character/amor.png" id="29_fwu88"]
+[ext_resource type="Texture2D" uid="uid://boddluwrb6xw8" path="res://character/ryan listening.png" id="30_7dajx"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_b0uvr"]
+load_path = "res://.godot/imported/aircon.png-71bf5549d2fdf5c36da25a3379bc0d4b.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ryu2u"]
+load_path = "res://.godot/imported/clock.png-b28dd9d4d0ed556172cc16c336d2238a.ctex"
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5fwij"]
+texture = ExtResource("8_iwj2h")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_j4mod"]
+sources/0 = SubResource("TileSetAtlasSource_5fwij")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7tnvl"]
+shader = ExtResource("13_7s71n")
+shader_parameter/outline_color = Color(1, 0, 0, 0)
+shader_parameter/outline_size = 2.0
+
+[sub_resource type="Theme" id="Theme_7s71n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w6isl"]
+size = Vector2(767.1515, 283.54453)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bx6cq"]
+shader = ExtResource("15_w6isl")
+shader_parameter/outline_color = Color(1, 0, 0, 0)
+shader_parameter/outline_size = 2.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7tnvl"]
+size = Vector2(73.893814, 617.79517)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g3300"]
+size = Vector2(72.17532, 640.9929)
+
+[node name="School" type="Sprite2D" unique_id=2122797858]
+position = Vector2(575.62494, 318.1875)
+scale = Vector2(0.3860047, 0.8091109)
+texture = ExtResource("1_v3cpt")
+script = ExtResource("2_c0jbl")
+
+[node name="Aircon" type="Sprite2D" parent="." unique_id=998342219]
+position = Vector2(988.5677, -323.7956)
+scale = Vector2(8.750864, 5.196663)
+texture = SubResource("CompressedTexture2D_b0uvr")
+
+[node name="Aircon2" type="Sprite2D" parent="." unique_id=1649399595]
+position = Vector2(-810.9339, -320.11435)
+scale = Vector2(8.750864, 5.196663)
+texture = SubResource("CompressedTexture2D_b0uvr")
+
+[node name="Clock" type="Sprite2D" parent="." unique_id=409799970]
+position = Vector2(100.40161, -310.2977)
+scale = Vector2(6.2387543, 2.7240808)
+texture = SubResource("CompressedTexture2D_ryu2u")
+
+[node name="RizalPortrait" type="Sprite2D" parent="." unique_id=407207217]
+position = Vector2(-1287.1969, -79.60681)
+scale = Vector2(8.330455, 3.3631856)
+texture = ExtResource("3_6qn5t")
+
+[node name="SchoolAnthemBoard" type="Sprite2D" parent="." unique_id=594966808]
+position = Vector2(-131.97899, 63.52073)
+scale = Vector2(4.142236, 3.0518274)
+texture = ExtResource("4_iwj2h")
+
+[node name="VisionMissionBoard" type="Sprite2D" parent="." unique_id=479034420]
+position = Vector2(155.26978, 62.278282)
+scale = Vector2(3.8681283, 3.0267954)
+texture = ExtResource("6_ardt8")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=630382988]
+position = Vector2(-1065.799, -14.571625)
+tile_map_data = PackedByteArray("AADm/xkAAAAAAAAAAADn/xkAAAABAAAAAADo/xkAAAACAAAAAADp/xkAAAADAAAAAADq/xkAAAAEAAAAAADr/xkAAAAFAAAAAADs/xkAAAAAAAAAAADt/xkAAAABAAAAAADu/xkAAAACAAAAAADv/xkAAAADAAAAAADw/xkAAAAEAAAAAADx/xkAAAAFAAAAAADy/xkAAAAAAAAAAADz/xkAAAABAAAAAAD0/xkAAAACAAAAAAD1/xkAAAADAAAAAAD2/xkAAAAEAAAAAAD3/xkAAAAFAAAAAAD4/xkAAAAAAAAAAAD5/xkAAAABAAAAAAD6/xkAAAACAAAAAAD7/xkAAAADAAAAAAD8/xkAAAAEAAAAAAD9/xkAAAAFAAAAAAD+/xkAAAAAAAAAAAD//xkAAAABAAAAAAAAABkAAAACAAAAAAABABkAAAADAAAAAAACABkAAAAEAAAAAAADABkAAAAFAAAAAAAEABkAAAAAAAAAAAAFABkAAAABAAAAAAAGABkAAAACAAAAAAAHABkAAAADAAAAAAAIABkAAAAEAAAAAAAJABkAAAAFAAAAAAAKABkAAAAAAAAAAAALABkAAAABAAAAAAAMABkAAAACAAAAAAANABkAAAADAAAAAAAOABkAAAAEAAAAAAAPABkAAAAFAAAAAAAQABkAAAAAAAAAAAARABkAAAABAAAAAAASABkAAAACAAAAAAATABkAAAADAAAAAAAUABkAAAAEAAAAAAAVABkAAAAFAAAAAAAWABkAAAAAAAAAAAAXABkAAAABAAAAAAAYABkAAAACAAAAAAAZABkAAAADAAAAAAAaABkAAAAEAAAAAAAbABkAAAAFAAAAAAAcABkAAAAAAAAAAAAdABkAAAABAAAAAAAeABkAAAACAAAAAAAfABkAAAADAAAAAAAgABkAAAAEAAAAAAAhABkAAAAFAAAAAAAiABkAAAAAAAAAAAAjABkAAAABAAAAAAAkABkAAAACAAAAAAAlABkAAAADAAAAAAAmABkAAAAEAAAAAAAnABkAAAAFAAAAAAAoABkAAAAAAAAAAAApABkAAAABAAAAAAAqABkAAAACAAAAAAArABkAAAADAAAAAAAsABkAAAAEAAAAAAAtABkAAAAFAAAAAAAuABkAAAAAAAAAAAAvABkAAAABAAAAAAAwABkAAAACAAAAAAAxABkAAAADAAAAAAAyABkAAAAEAAAAAAAzABkAAAAFAAAAAAA0ABkAAAAAAAAAAAA1ABkAAAABAAAAAAA2ABkAAAACAAAAAAA3ABkAAAADAAAAAAA4ABkAAAAEAAAAAAA5ABkAAAAFAAAAAAA6ABkAAAAAAAAAAAA7ABkAAAABAAAAAAA8ABkAAAACAAAAAAA9ABkAAAADAAAAAAA+ABkAAAAEAAAAAAA/ABkAAAAFAAAAAABAABkAAAAAAAAAAABBABkAAAABAAAAAABCABkAAAACAAAAAABDABkAAAADAAAAAABEABkAAAAEAAAAAABFABkAAAAFAAAAAABGABkAAAAAAAAAAABHABkAAAABAAAAAABIABkAAAACAAAAAABJABkAAAADAAAAAABKABkAAAAEAAAAAABLABkAAAAFAAAAAABMABkAAAAAAAAAAABNABkAAAABAAAAAABOABkAAAACAAAAAABPABkAAAADAAAAAABQABkAAAAEAAAAAABRABkAAAAFAAAAAABSABkAAAAAAAAAAABTABkAAAABAAAAAABUABkAAAACAAAAAABVABkAAAADAAAAAABWABkAAAAEAAAAAABXABkAAAAFAAAAAABYABkAAAAAAAAAAABZABkAAAABAAAAAABaABkAAAACAAAAAABbABkAAAADAAAAAABcABkAAAAEAAAAAABdABkAAAAFAAAAAABeABkAAAAAAAAAAABfABkAAAABAAAAAABgABkAAAACAAAAAABhABkAAAADAAAAAABiABkAAAAEAAAAAABjABkAAAAFAAAAAABkABkAAAAAAAAAAABlABkAAAABAAAAAABmABkAAAACAAAAAABnABkAAAADAAAAAABoABkAAAAEAAAAAABpABkAAAAFAAAAAABqABkAAAAAAAAAAABrABkAAAABAAAAAABsABkAAAACAAAAAABtABkAAAADAAAAAABuABkAAAAEAAAAAABvABkAAAAFAAAAAABwABkAAAAAAAAAAABxABkAAAABAAAAAAByABkAAAACAAAAAABzABkAAAADAAAAAAB0ABkAAAAEAAAAAAB1ABkAAAAFAAAAAAB2ABkAAAAAAAAAAAB3ABkAAAABAAAAAAB4ABkAAAACAAAAAAB5ABkAAAADAAAAAAB6ABkAAAAEAAAAAAB7ABkAAAAFAAAAAAB8ABkAAAAAAAAAAAB9ABkAAAABAAAAAAB+ABkAAAACAAAAAAB/ABkAAAADAAAAAACAABkAAAAEAAAAAACBABkAAAAFAAAAAACCABkAAAAAAAAAAACDABkAAAABAAAAAACEABkAAAACAAAAAACFABkAAAADAAAAAACGABkAAAAEAAAAAACHABkAAAAFAAAAAACIABkAAAAAAAAAAACJABkAAAABAAAAAACKABkAAAACAAAAAACLABkAAAADAAAAAACMABkAAAAEAAAAAACNABkAAAAFAAAAAACOABkAAAAAAAAAAACPABkAAAABAAAAAACQABkAAAACAAAAAACRABkAAAADAAAAAACSABkAAAAEAAAAAACTABkAAAAFAAAAAACUABkAAAAAAAAAAACVABkAAAABAAAAAACWABkAAAACAAAAAACXABkAAAADAAAAAACYABkAAAAEAAAAAACZABkAAAAFAAAAAACaABkAAAAAAAAAAACbABkAAAABAAAAAACcABkAAAACAAAAAACdABkAAAADAAAAAACeABkAAAAEAAAAAACfABkAAAAFAAAAAAA=")
+tile_set = SubResource("TileSet_j4mod")
+
+[node name="Bookshelf" type="Sprite2D" parent="." unique_id=1316310456]
+position = Vector2(-1120.5284, 262.31433)
+scale = Vector2(1.2146597, 0.34530225)
+texture = ExtResource("2_ixv6b")
+
+[node name="Electricfan" type="Sprite2D" parent="." unique_id=2065065232]
+position = Vector2(-503.45724, -8.086007)
+scale = Vector2(0.73521745, 0.36000943)
+texture = ExtResource("11_t6jpy")
+
+[node name="Electricfan2" type="Sprite2D" parent="." unique_id=21681874]
+position = Vector2(571.90955, -11.026876)
+scale = Vector2(0.73521745, 0.36000943)
+texture = ExtResource("11_t6jpy")
+
+[node name="TrashBinSide" type="Sprite2D" parent="." unique_id=1762578062]
+position = Vector2(-712.8579, 300.83054)
+scale = Vector2(1.0240762, 0.47472373)
+texture = ExtResource("5_5fwij")
+
+[node name="TeacherSDesk" type="Sprite2D" parent="." unique_id=2089167334]
+position = Vector2(-973.02234, 328.16467)
+scale = Vector2(0.86391336, 0.41777846)
+texture = ExtResource("11_ryu2u")
+
+[node name="BlackBoard" type="Sprite2D" parent="." unique_id=135026725]
+position = Vector2(-1436.243, 155.46274)
+scale = Vector2(1.3318026, 0.7093275)
+texture = ExtResource("10_ryu2u")
+
+[node name="SchoolDoor" type="Sprite2D" parent="." unique_id=1360693579]
+material = SubResource("ShaderMaterial_7tnvl")
+position = Vector2(1314.4271, 201.22398)
+scale = Vector2(0.376684, 0.21974902)
+texture = ExtResource("13_7tnvl")
+
+[node name="CChar" type="Sprite2D" parent="." unique_id=932785888]
+visible = false
+position = Vector2(1265.2053, 264.25607)
+scale = Vector2(0.40695584, 0.1677671)
+texture = ExtResource("18_ox4go")
+flip_h = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=4503486]
+
+[node name="interact button" type="Button" parent="CanvasLayer" unique_id=1449978884]
+visible = false
+offset_left = 193.0
+offset_top = 491.0
+offset_right = 364.0
+offset_bottom = 543.0
+text = "E Interact
+"
+
+[node name="Choice Panel" type="Panel" parent="CanvasLayer" unique_id=675968555]
+visible = false
+offset_left = 224.0
+offset_top = 436.0
+offset_right = 928.0
+offset_bottom = 641.0
+size_flags_vertical = 8
+mouse_filter = 2
+
+[node name="LT button1" type="Button" parent="CanvasLayer/Choice Panel" unique_id=1702605187]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 1.0
+offset_right = 162.0
+offset_bottom = 147.0
+
+[node name="Listen to Teacher  Image" type="TextureRect" parent="CanvasLayer/Choice Panel/LT button1" unique_id=1632122244]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 7.0
+offset_right = 135.0
+offset_bottom = 110.0
+texture = ExtResource("19_4wnxl")
+expand_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Choice Panel/LT button1" unique_id=2048621232]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 117.0
+offset_right = 148.0
+offset_bottom = 145.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Choice Panel/LT button1/VBoxContainer" unique_id=1276612469]
+layout_mode = 2
+text = "Listen to Teacher"
+horizontal_alignment = 1
+
+[node name="Cmate button2" type="Button" parent="CanvasLayer/Choice Panel" unique_id=302200680]
+layout_mode = 0
+offset_left = 186.0
+offset_top = 1.0
+offset_right = 337.0
+offset_bottom = 146.0
+
+[node name="Classmate  image" type="TextureRect" parent="CanvasLayer/Choice Panel/Cmate button2" unique_id=1901768899]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 15.0
+offset_right = 124.0
+offset_bottom = 109.0
+texture = ExtResource("18_ox4go")
+expand_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Choice Panel/Cmate button2" unique_id=95898320]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 117.0
+offset_right = 149.0
+offset_bottom = 140.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Choice Panel/Cmate button2/VBoxContainer" unique_id=1461042347]
+layout_mode = 2
+text = "Classmate"
+horizontal_alignment = 1
+
+[node name="Nap button3" type="Button" parent="CanvasLayer/Choice Panel" unique_id=2008495283]
+layout_mode = 0
+offset_left = 364.0
+offset_top = 1.0
+offset_right = 510.0
+offset_bottom = 146.0
+
+[node name="Nap image" type="TextureRect" parent="CanvasLayer/Choice Panel/Nap button3" unique_id=53467726]
+layout_mode = 0
+offset_left = -63.0
+offset_top = 5.0
+offset_right = 203.0
+offset_bottom = 102.0
+texture = ExtResource("20_bx6cq")
+expand_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Choice Panel/Nap button3" unique_id=288822833]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 117.0
+offset_right = 124.0
+offset_bottom = 140.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Choice Panel/Nap button3/VBoxContainer" unique_id=1571125334]
+layout_mode = 2
+text = "Nap"
+horizontal_alignment = 1
+
+[node name="SC button4" type="Button" parent="CanvasLayer/Choice Panel" unique_id=250171175]
+layout_mode = 0
+offset_left = 537.0
+offset_top = 1.0
+offset_right = 680.0
+offset_bottom = 146.0
+
+[node name="Canteen image" type="TextureRect" parent="CanvasLayer/Choice Panel/SC button4" unique_id=642180180]
+layout_mode = 0
+offset_left = 12.0
+offset_top = -1.0
+offset_right = 134.0
+offset_bottom = 121.0
+theme = SubResource("Theme_7s71n")
+texture = ExtResource("21_etdhx")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Choice Panel/SC button4" unique_id=1954285047]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 117.0
+offset_right = 124.0
+offset_bottom = 140.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Choice Panel/SC button4/VBoxContainer" unique_id=18603798]
+layout_mode = 2
+text = "Canteen"
+horizontal_alignment = 1
+
+[node name="Back button" type="Button" parent="CanvasLayer/Choice Panel" unique_id=1384097044]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -76.5
+offset_top = 51.5
+offset_right = 79.5
+offset_bottom = 93.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "< back"
+
+[node name="LTButton" type="Button" parent="CanvasLayer" unique_id=852189034]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = 179.0
+offset_right = 119.0
+offset_bottom = 234.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "E Use Chair"
+
+[node name="NapButton" type="Button" parent="CanvasLayer" unique_id=1771073727]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -56.0
+offset_top = 160.0
+offset_right = 103.0
+offset_bottom = 215.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "E Nap"
+
+[node name="SCButton" type="Button" parent="CanvasLayer" unique_id=871648903]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 395.0
+offset_top = 53.0
+offset_right = 571.0
+offset_bottom = 115.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "E Canteen"
+
+[node name="CmateButton" type="Button" parent="CanvasLayer" unique_id=139117589]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 385.0
+offset_top = 64.0
+offset_right = 565.0
+offset_bottom = 119.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "E Talk"
+
+[node name="DayTimePanel" type="Panel" parent="CanvasLayer" unique_id=224407762]
+offset_right = 271.0
+offset_bottom = 74.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/DayTimePanel" unique_id=1042594974]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="DayLabel" type="Label" parent="CanvasLayer/DayTimePanel/VBoxContainer" unique_id=1147693591]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Day 1"
+
+[node name="TimeLabel" type="Label" parent="CanvasLayer/DayTimePanel/VBoxContainer" unique_id=1258426405]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Remaining Time: 3:00"
+
+[node name="DeskArea" type="Area2D" parent="." unique_id=349444015]
+visible = false
+position = Vector2(162.2121, 110.160095)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeskArea" unique_id=2093783537]
+position = Vector2(-1572.6509, 105.50125)
+scale = Vector2(0.9999995, 1)
+shape = SubResource("RectangleShape2D_w6isl")
+
+[node name="LTArea" type="Area2D" parent="." unique_id=417694823]
+position = Vector2(162.2121, 110.160095)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LTArea" unique_id=735760877]
+visible = false
+position = Vector2(-588.69635, 138.02904)
+scale = Vector2(0.9999995, 1)
+shape = SubResource("RectangleShape2D_w6isl")
+
+[node name="NapArea" type="Area2D" parent="." unique_id=1949497050]
+position = Vector2(162.2121, 110.160095)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NapArea" unique_id=1920181447]
+visible = false
+position = Vector2(-663.82495, 140.50089)
+scale = Vector2(0.9999995, 1)
+shape = SubResource("RectangleShape2D_w6isl")
+
+[node name="SCArea" type="Area2D" parent="." unique_id=499025956]
+position = Vector2(162.2121, 110.160095)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SCArea" unique_id=1922785915]
+visible = false
+position = Vector2(680.71826, 128.14165)
+scale = Vector2(0.9999995, 1)
+shape = SubResource("RectangleShape2D_w6isl")
+
+[node name="CmateArea" type="Area2D" parent="." unique_id=1379774676]
+visible = false
+position = Vector2(162.2121, 110.160095)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CmateArea" unique_id=1877113543]
+visible = false
+position = Vector2(621.1334, 130.61348)
+scale = Vector2(0.9999995, 1)
+shape = SubResource("RectangleShape2D_w6isl")
+
+[node name="LeftFacingPixelArtTeacherSprite" type="Sprite2D" parent="." unique_id=1719301953]
+position = Vector2(-1309.8444, 267.51804)
+scale = Vector2(0.34248617, 0.139198)
+texture = ExtResource("20_etdhx")
+
+[node name="TeacherSChair" type="Sprite2D" parent="." unique_id=866179049]
+position = Vector2(-1231.805, 321.9524)
+scale = Vector2(1.0818012, 0.42472103)
+texture = ExtResource("12_t6jpy")
+
+[node name="Chair1" type="Sprite2D" parent="." unique_id=693253761]
+position = Vector2(-285.0962, 241.6293)
+scale = Vector2(0.9033396, 0.60814065)
+texture = ExtResource("22_ka5dt")
+
+[node name="Ash" type="Sprite2D" parent="." unique_id=596382253]
+position = Vector2(-347.93106, 218.60117)
+scale = Vector2(1.2853924, 0.71539176)
+texture = ExtResource("23_7tnvl")
+
+[node name="Chair3" type="Sprite2D" parent="." unique_id=809833050]
+position = Vector2(75.91598, 241.62924)
+scale = Vector2(0.90333956, 0.6081406)
+texture = ExtResource("22_ka5dt")
+
+[node name="Mito2" type="Sprite2D" parent="." unique_id=154534325]
+position = Vector2(39.83121, 211.11137)
+scale = Vector2(0.75879633, 0.42820096)
+texture = ExtResource("24_t5ufn")
+
+[node name="Chair5" type="Sprite2D" parent="." unique_id=182174849]
+position = Vector2(478.29413, 237.93083)
+scale = Vector2(0.90333956, 0.6081406)
+texture = ExtResource("22_ka5dt")
+
+[node name="Gia" type="Sprite2D" parent="." unique_id=43270666]
+position = Vector2(404.38852, 212.6305)
+scale = Vector2(0.8717686, 0.394423)
+texture = ExtResource("26_g3300")
+
+[node name="Arwind" type="Sprite2D" parent="." unique_id=622892914]
+position = Vector2(814.43335, 212.34726)
+scale = Vector2(0.89098346, 0.44411826)
+texture = ExtResource("27_5dt0h")
+
+[node name="Chair8" type="Sprite2D" parent="." unique_id=356455300]
+position = Vector2(865.6301, 295.87256)
+scale = Vector2(0.90333956, 0.6081406)
+texture = ExtResource("22_ka5dt")
+
+[node name="Player" parent="." unique_id=392750223 instance=ExtResource("7_6qn5t")]
+position = Vector2(-499.02234, 192.57248)
+script = ExtResource("13_t6jpy")
+
+[node name="MainChair" type="Sprite2D" parent="." unique_id=1476384378]
+material = SubResource("ShaderMaterial_bx6cq")
+position = Vector2(73.50964, 292.68246)
+scale = Vector2(0.9033396, 0.60814065)
+texture = ExtResource("22_ka5dt")
+
+[node name="Chair6" type="Sprite2D" parent="." unique_id=348696315]
+position = Vector2(478.2942, 295.87253)
+scale = Vector2(0.9033396, 0.60814065)
+texture = ExtResource("22_ka5dt")
+
+[node name="Amor" type="Sprite2D" parent="." unique_id=1434194190]
+position = Vector2(407.7025, 258.0765)
+scale = Vector2(0.93130535, 0.44906038)
+texture = ExtResource("29_fwu88")
+
+[node name="Chair2" type="Sprite2D" parent="." unique_id=588372488]
+position = Vector2(-286.97644, 295.87253)
+scale = Vector2(0.9033396, 0.60814065)
+texture = ExtResource("22_ka5dt")
+
+[node name="OtherCharacter" type="Sprite2D" parent="." unique_id=1527190454]
+position = Vector2(-322.85864, 246.95316)
+scale = Vector2(0.5928478, 0.3175398)
+texture = ExtResource("25_mbbul")
+
+[node name="Chair7" type="Sprite2D" parent="." unique_id=1614387093]
+position = Vector2(869.3906, 241.6293)
+scale = Vector2(0.9033396, 0.60814065)
+texture = ExtResource("22_ka5dt")
+
+[node name="RyanListening" type="Sprite2D" parent="." unique_id=1677576389]
+position = Vector2(817.0242, 254.36874)
+scale = Vector2(0.36660776, 0.18675603)
+texture = ExtResource("30_7dajx")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2144598587]
+visible = false
+
+[node name="Left Wall" type="CollisionShape2D" parent="StaticBody2D" unique_id=1115904393]
+position = Vector2(-1840.975, 77.631516)
+scale = Vector2(1, 1.0000002)
+shape = SubResource("RectangleShape2D_7tnvl")
+
+[node name="Right Wall" type="CollisionShape2D" parent="StaticBody2D" unique_id=68561660]
+position = Vector2(1109.7665, 65.272255)
+scale = Vector2(1, 1.0000002)
+shape = SubResource("RectangleShape2D_g3300")
+
+[connection signal="pressed" from="CanvasLayer/interact button" to="." method="_on_interact_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Choice Panel/LT button1" to="." method="_on_lt_button_1_pressed"]
+[connection signal="pressed" from="CanvasLayer/Choice Panel/Cmate button2" to="." method="_on_cmate_button_2_pressed"]
+[connection signal="pressed" from="CanvasLayer/Choice Panel/Nap button3" to="." method="_on_nap_button_3_pressed"]
+[connection signal="pressed" from="CanvasLayer/Choice Panel/SC button4" to="." method="_on_sc_button_4_pressed"]
+[connection signal="pressed" from="CanvasLayer/Choice Panel/Back button" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/LTButton" to="." method="_on_lt_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/NapButton" to="." method="_on_nap_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/SCButton" to="." method="_on_sc_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/CmateButton" to="." method="_on_cmate_button_pressed"]
+[connection signal="body_entered" from="DeskArea" to="." method="_on_desk_area_body_entered"]
+[connection signal="body_exited" from="DeskArea" to="." method="_on_desk_area_body_exited"]
+[connection signal="body_entered" from="LTArea" to="." method="_on_lt_area_body_entered"]
+[connection signal="body_exited" from="LTArea" to="." method="_on_lt_area_body_exited"]
+[connection signal="body_entered" from="NapArea" to="." method="_on_nap_area_body_entered"]
+[connection signal="body_exited" from="NapArea" to="." method="_on_nap_area_body_exited"]
+[connection signal="body_entered" from="SCArea" to="." method="_on_sc_area_body_entered"]
+[connection signal="body_exited" from="SCArea" to="." method="_on_sc_area_body_exited"]
+[connection signal="body_entered" from="CmateArea" to="." method="_on_cmate_area_body_entered"]
+[connection signal="body_exited" from="CmateArea" to="." method="_on_cmate_area_body_exited"]

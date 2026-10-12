@@ -1,0 +1,6 @@
+.godot/
+.mono/
+export.cfg
+export_credentials.cfg
+.DS_Store
+Thumbs.db

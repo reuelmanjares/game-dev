@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://dx7qm1d4tw1ti"]
+
+[ext_resource type="Texture2D" uid="uid://xvuyjy35d81k" path="res://character/walk_left_1.png" id="2_dw050"]
+[ext_resource type="Texture2D" uid="uid://dt2djsiyb2lqc" path="res://character/walk_left_2.png" id="3_b26j0"]
+[ext_resource type="Texture2D" uid="uid://dclfcinp2t1rq" path="res://character/walk_left_3.png" id="4_n7ghd"]
+[ext_resource type="Texture2D" uid="uid://c024clk1s4t62" path="res://character/walk_left_4.png" id="5_nvl01"]
+[ext_resource type="Texture2D" uid="uid://dj3v2hvcmh6eq" path="res://character/walk_left_5.png" id="6_ivps1"]
+[ext_resource type="Texture2D" uid="uid://b8tqwwcuic0jc" path="res://character/walk_left_6.png" id="7_urp6f"]
+[ext_resource type="Texture2D" uid="uid://08msqp6oxix5" path="res://character/walk_left_7.png" id="8_bwjto"]
+[ext_resource type="Texture2D" uid="uid://emx61ydvp57r" path="res://character/walk_left_8.png" id="8_dw050"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j4mod"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rxnjp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_dw050")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_b26j0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_n7ghd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_nvl01")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ivps1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_urp6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_bwjto")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_dw050")
+}],
+"loop": 1,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[node name="Player" type="CharacterBody2D" unique_id=392750223]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=863387428]
+shape = SubResource("RectangleShape2D_j4mod")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1963524168]
+position = Vector2(375.59625, 72.432236)
+scale = Vector2(0.7759487, 0.7443802)
+sprite_frames = SubResource("SpriteFrames_rxnjp")
+animation = &"walk"
+frame = 7
+frame_progress = 0.86434764

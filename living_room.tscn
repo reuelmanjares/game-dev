@@ -1,0 +1,508 @@
+[gd_scene format=4 uid="uid://b7b5cdau5wdb3"]
+
+[ext_resource type="Texture2D" uid="uid://doq74cmepwkn8" path="res://rooms/living_room.png" id="1_xal5j"]
+[ext_resource type="Script" uid="uid://dxmvjtldewi1b" path="res://Script/lr.gd" id="2_mogh0"]
+[ext_resource type="Texture2D" uid="uid://ccn8btnpptl33" path="res://tiles/3_basketweave_wood_terrain_3x3.png" id="2_w7u4w"]
+[ext_resource type="Texture2D" uid="uid://htohmc41svw" path="res://school_s_objects/clock.png" id="3_qxcby"]
+[ext_resource type="Texture2D" uid="uid://c1fpkgaifvkrh" path="res://school_s_objects/rizal_portrait.png" id="4_mjt0p"]
+[ext_resource type="Texture2D" uid="uid://biqb325vpdtc6" path="res://school_s_objects/trash_bin_side.png" id="5_jm2cs"]
+[ext_resource type="Texture2D" uid="uid://lluy5yekx75d" path="res://living_room_objects/dining.png" id="6_amcw0"]
+[ext_resource type="Texture2D" uid="uid://crc84svu1ppw2" path="res://living_room_objects/ref.png" id="6_mjt0p"]
+[ext_resource type="Shader" uid="uid://phe4ad6n0y7w" path="res://Table.gdshader" id="8_2uuqs"]
+[ext_resource type="Texture2D" uid="uid://cqrjsgm6obu10" path="res://living_room_objects/library.png" id="8_jm2cs"]
+[ext_resource type="PackedScene" uid="uid://dx7qm1d4tw1ti" path="res://player.tscn" id="9_jm2cs"]
+[ext_resource type="Texture2D" uid="uid://e3sp1kq8n4ge" path="res://living_room_objects/small_lamp.png" id="10_sigte"]
+[ext_resource type="Shader" uid="uid://cp4kassy3dp4o" path="res://TV.gdshader" id="13_mogh0"]
+[ext_resource type="Shader" uid="uid://dg3dm2a2m6fru" path="res://Broom.gdshader" id="14_weu2t"]
+[ext_resource type="Script" uid="uid://cf44guco6yfmo" path="res://Script/touchmove.gd" id="15_6utvc"]
+[ext_resource type="Texture2D" uid="uid://bdd62eb3qfe2n" path="res://living_room_objects/livingroomDoor.png" id="15_joy5l"]
+[ext_resource type="Texture2D" uid="uid://6rowfhj30fu2" path="res://living_room_objects/broom1.png" id="15_mj6ii"]
+[ext_resource type="Shader" uid="uid://bj5lm0mom47dn" path="res://Door.gdshader" id="16_s8sbf"]
+[ext_resource type="Texture2D" uid="uid://daskgvi3au12s" path="res://living_room_objects/broom2.png" id="17_s8sbf"]
+[ext_resource type="Texture2D" uid="uid://dst3jiujcff4p" path="res://living_room_objects/tv.png" id="18_nrb5j"]
+[ext_resource type="Texture2D" uid="uid://dt7ce1u61mivs" path="res://decision box/food.png" id="19_is08k"]
+[ext_resource type="Texture2D" uid="uid://b07x6f06c8mi4" path="res://decision box/bathtub.png" id="20_5m0m6"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sigte"]
+texture = ExtResource("2_w7u4w")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_j4mod"]
+sources/0 = SubResource("TileSetAtlasSource_sigte")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6sk78"]
+load_path = "res://.godot/imported/wallframe.png-e765ab35732f31310ef2d9b4e1c4cce9.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6utvc"]
+load_path = "res://.godot/imported/vase.png-ad9e8d599b888cfc5a2f4fd662fc5089.ctex"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2uuqs"]
+shader = ExtResource("8_2uuqs")
+shader_parameter/outline_color = Color(1, 0, 0, 0)
+shader_parameter/outline_size = 2.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mogh0"]
+shader = ExtResource("13_mogh0")
+shader_parameter/outline_color = Color(1, 0, 0, 0)
+shader_parameter/outline_size = 2.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mogh0"]
+load_path = "res://.godot/imported/sofa and tv.png-365ae5318922124be86219fe62a053b6.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_j7inc"]
+load_path = "res://.godot/imported/small table.png-a71eff845285aeebdb4cea123f31f8d3.ctex"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_joy5l"]
+shader = ExtResource("14_weu2t")
+shader_parameter/outline_color = Color(1, 0, 0, 0)
+shader_parameter/outline_size = 2.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5pyll"]
+shader = ExtResource("16_s8sbf")
+shader_parameter/outline_color = Color(1, 0, 0, 0)
+shader_parameter/outline_size = 2.0
+
+[sub_resource type="Theme" id="Theme_mogh0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pd0i2"]
+size = Vector2(610.2223, 271.65186)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s8sbf"]
+size = Vector2(73.893814, 617.79517)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nrb5j"]
+size = Vector2(72.17532, 640.9929)
+
+[node name="LivingRoom" type="Sprite2D" unique_id=1878737317]
+position = Vector2(576.12494, 324.56253)
+scale = Vector2(0.38835683, 0.8207755)
+texture = ExtResource("1_xal5j")
+script = ExtResource("2_mogh0")
+
+[node name="Bedd" type="Sprite2D" parent="." unique_id=1044003084]
+position = Vector2(-693.5114, 226.20084)
+scale = Vector2(0.91692865, 0.37888354)
+
+[node name="DogSleeping" type="Sprite2D" parent="." unique_id=2059918121]
+position = Vector2(192.27133, 279.92752)
+scale = Vector2(2.5286932, 1.2725654)
+
+[node name="Cage1" type="Sprite2D" parent="." unique_id=1351705148]
+position = Vector2(328.3468, 243.11514)
+scale = Vector2(3.3719864, 2.0906177)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=955360674]
+tile_map_data = PackedByteArray("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AAA5ABIAAAABAAAAAAA6ABIAAAACAAAAAAA7ABIAAAADAAAAAAA8ABIAAAAEAAAAAAA9ABIAAAAFAAAAAAA+ABIAAAAAAAAAAAA/ABIAAAABAAAAAABAABIAAAACAAAAAABBABIAAAADAAAAAABCABIAAAAEAAAAAABDABIAAAAFAAAAAABEABIAAAAAAAAAAABFABIAAAABAAAAAABGABIAAAACAAAAAABHABIAAAADAAAAAABIABIAAAAEAAAAAABJABIAAAAFAAAAAABKABIAAAAAAAAAAABLABIAAAABAAAAAABMABIAAAACAAAAAABNABIAAAADAAAAAABOABIAAAAEAAAAAABPABIAAAAFAAAAAABQABIAAAAAAAAAAABRABIAAAABAAAAAABSABIAAAACAAAAAABTABIAAAADAAAAAABUABIAAAAEAAAAAABVABIAAAAFAAAAAABWABIAAAAAAAAAAABXABIAAAAAAAAAAABYABIAAAABAAAAAABZABIAAAACAAAAAABaABIAAAADAAAAAABbABIAAAAEAAAAAABcABIAAAAFAAAAAACj/xMAAAAAAAIAAACk/xMAAAABAAIAAACl/xMAAAACAAIAAACm/xMAAAADAAIAAACn/xMAAAAEAAIAAACo/xMAAAAFAAIAAACp/xMAAAAAAAIAAACq/xMAAAABAAIAAACr/xMAAAACAAIAAACs/xMAAAADAAIAAACt/xMAAAAEAAIAAACu/xMAAAAFAAIAAACv/xMAAAAAAAIAAACw/xMAAAABAAIAAACx/xMAAAACAAIAAACy/xMAAAADAAIAAACz/xMAAAAEAAIAAAC0/xMAAAAFAAIAAAC1/xMAAAAAAAIAAAC2/xMAAAABAAIAAAC3/xMAAAACAAIAAAC4/xMAAAADAAIAAAC5/xMAAAAEAAIAAAC6/xMAAAAFAAIAAAC7/xMAAAAAAAIAAAC8/xMAAAABAAIAAAC9/xMAAAACAAIAAAC+/xMAAAADAAIAAAC//xMAAAAEAAIAAADA/xMAAAAFAAIAAADB/xMAAAAAAAIAAADC/xMAAAABAAIAAADD/xMAAAACAAIAAADE/xMAAAADAAIAAADF/xMAAAAEAAIAAADG/xMAAAAFAAIAAADH/xMAAAAAAAIAAADI/xMAAAABAAIAAADJ/xMAAAACAAIAAADK/xMAAAADAAIAAADL/xMAAAAEAAIAAADM/xMAAAAFAAIAAADN/xMAAAAAAAIAAADO/xMAAAABAAIAAADP/xMAAAACAAIAAADQ/xMAAAADAAIAAADR/xMAAAAEAAIAAADS/xMAAAAFAAIAAADT/xMAAAAAAAIAAADU/xMAAAABAAIAAADV/xMAAAACAAIAAADW/xMAAAADAAIAAADX/xMAAAAEAAIAAADY/xMAAAAFAAIAAADZ/xMAAAAAAAIAAADa/xMAAAABAAIAAADb/xMAAAACAAIAAADc/xMAAAADAAIAAADd/xMAAAAEAAIAAADe/xMAAAAFAAIAAADf/xMAAAAAAAIAAADg/xMAAAABAAIAAADh/xMAAAACAAIAAADi/xMAAAADAAIAAADj/xMAAAAEAAIAAADk/xMAAAAFAAIAAADl/xMAAAAAAAIAAADm/xMAAAABAAIAAADn/xMAAAACAAIAAADo/xMAAAADAAIAAADp/xMAAAAEAAIAAADq/xMAAAAFAAIAAADr/xMAAAAAAAIAAADs/xMAAAABAAIAAADt/xMAAAACAAIAAADu/xMAAAADAAIAAADv/xMAAAAEAAIAAADw/xMAAAAFAAIAAADx/xMAAAAAAAIAAADy/xMAAAABAAIAAADz/xMAAAACAAIAAAD0/xMAAAADAAIAAAD1/xMAAAAEAAIAAAD2/xMAAAAFAAIAAAD3/xMAAAAAAAIAAAD4/xMAAAABAAIAAAD5/xMAAAACAAIAAAD6/xMAAAADAAIAAAD7/xMAAAAEAAIAAAD8/xMAAAAFAAIAAAD9/xMAAAAAAAIAAAD+/xMAAAABAAIAAAD//xMAAAACAAIAAAAAABMAAAADAAIAAAABABMAAAAEAAIAAAACABMAAAAFAAIAAAADABMAAAAAAAIAAAAEABMAAAABAAIAAAAFABMAAAACAAIAAAAGABMAAAADAAIAAAAHABMAAAAEAAIAAAAIABMAAAAFAAIAAAAJABMAAAAAAAIAAAAKABMAAAABAAIAAAALABMAAAACAAIAAAAMABMAAAADAAIAAAANABMAAAAEAAIAAAAOABMAAAAFAAIAAAAPABMAAAAAAAIAAAAQABMAAAABAAIAAAARABMAAAACAAIAAAASABMAAAADAAIAAAATABMAAAAEAAIAAAAUABMAAAAFAAIAAAAVABMAAAAAAAIAAAAWABMAAAABAAIAAAAXABMAAAACAAIAAAAYABMAAAADAAIAAAAZABMAAAAEAAIAAAAaABMAAAAFAAIAAAAbABMAAAAAAAIAAAAcABMAAAABAAIAAAAdABMAAAACAAIAAAAeABMAAAADAAIAAAAfABMAAAAEAAIAAAAgABMAAAAFAAIAAAAhABMAAAAAAAIAAAAiABMAAAABAAIAAAAjABMAAAACAAIAAAAkABMAAAADAAIAAAAlABMAAAAEAAIAAAAmABMAAAAFAAIAAAAnABMAAAAAAAIAAAAoABMAAAABAAIAAAApABMAAAACAAIAAAAqABMAAAADAAIAAAArABMAAAAEAAIAAAAsABMAAAAFAAIAAAAtABMAAAAAAAIAAAAuABMAAAABAAIAAAAvABMAAAACAAIAAAAwABMAAAADAAIAAAAxABMAAAAEAAIAAAAyABMAAAAFAAIAAAAzABMAAAAAAAIAAAA0ABMAAAABAAIAAAA1ABMAAAACAAIAAAA2ABMAAAADAAIAAAA3ABMAAAAEAAIAAAA4ABMAAAAFAAIAAAA5ABMAAAAAAAIAAAA6ABMAAAABAAIAAAA7ABMAAAACAAIAAAA8ABMAAAADAAIAAAA9ABMAAAAEAAIAAAA+ABMAAAAFAAIAAAA/ABMAAAAAAAIAAABAABMAAAABAAIAAABBABMAAAACAAIAAABCABMAAAADAAIAAABDABMAAAAEAAIAAABEABMAAAAFAAIAAABFABMAAAAAAAIAAABGABMAAAABAAIAAABHABMAAAACAAIAAABIABMAAAADAAIAAABJABMAAAAEAAIAAABKABMAAAAFAAIAAABLABMAAAAAAAIAAABMABMAAAABAAIAAABNABMAAAACAAIAAABOABMAAAADAAIAAABPABMAAAAEAAIAAABQABMAAAAFAAIAAABRABMAAAAAAAIAAABSABMAAAABAAIAAABTABMAAAACAAIAAABUABMAAAADAAIAAABVABMAAAAEAAIAAABWABMAAAAFAAIAAABXABMAAAAAAAIAAABYABMAAAABAAIAAABZABMAAAACAAIAAABaABMAAAADAAIAAABbABMAAAAEAAIAAABcABMAAAAFAAIAAAA=")
+tile_set = SubResource("TileSet_j4mod")
+
+[node name="Wallframe" type="Sprite2D" parent="." unique_id=1499046594]
+position = Vector2(6.1475906, 3.5625014)
+scale = Vector2(7.2267814, 3.3803298)
+texture = SubResource("CompressedTexture2D_6sk78")
+
+[node name="Vase" type="Sprite2D" parent="." unique_id=703772773]
+position = Vector2(1081.72, 38.732834)
+scale = Vector2(3.0565405, 1.4754031)
+texture = SubResource("CompressedTexture2D_6utvc")
+
+[node name="Clock" type="Sprite2D" parent="." unique_id=985024992]
+position = Vector2(-1133.5741, -37.67169)
+scale = Vector2(5.4448547, 2.6476135)
+texture = ExtResource("3_qxcby")
+
+[node name="RizalPortrait" type="Sprite2D" parent="." unique_id=1742373350]
+position = Vector2(1098.9133, -57.07598)
+scale = Vector2(9.2528715, 3.6532004)
+texture = ExtResource("4_mjt0p")
+
+[node name="TrashBinSide" type="Sprite2D" parent="." unique_id=1781049245]
+position = Vector2(444.477, 254.36124)
+scale = Vector2(1.0696081, 0.583612)
+texture = ExtResource("5_jm2cs")
+
+[node name="Ref" type="Sprite2D" parent="." unique_id=973652809]
+position = Vector2(686.13184, 173.35036)
+scale = Vector2(0.40261492, 0.23549315)
+texture = ExtResource("6_mjt0p")
+
+[node name="Table" type="Sprite2D" parent="." unique_id=331016616]
+material = SubResource("ShaderMaterial_2uuqs")
+position = Vector2(80.98863, 208.52066)
+scale = Vector2(0.32470924, 0.2685228)
+texture = ExtResource("6_amcw0")
+
+[node name="Library2" type="Sprite2D" parent="." unique_id=1508830776]
+position = Vector2(1094.5499, 178.20139)
+scale = Vector2(0.28937188, 0.2107185)
+texture = ExtResource("8_jm2cs")
+
+[node name="SmallLamp" type="Sprite2D" parent="." unique_id=876077385]
+position = Vector2(-785.0289, 183.0525)
+scale = Vector2(0.6948985, 0.537899)
+texture = ExtResource("10_sigte")
+
+[node name="SofaAndTv" type="Sprite2D" parent="." unique_id=524404469]
+material = SubResource("ShaderMaterial_mogh0")
+position = Vector2(-868.4232, 215.79727)
+scale = Vector2(0.48504582, 0.26504013)
+texture = SubResource("CompressedTexture2D_mogh0")
+
+[node name="SmallTable" type="Sprite2D" parent="." unique_id=1620850133]
+position = Vector2(-787.1671, 249.75485)
+scale = Vector2(3.8138566, 1.9301921)
+texture = SubResource("CompressedTexture2D_j7inc")
+
+[node name="Broom1" type="Sprite2D" parent="." unique_id=1547383192]
+material = SubResource("ShaderMaterial_joy5l")
+position = Vector2(889.90753, 215.44888)
+scale = Vector2(5.7927527, 4.7860293)
+texture = ExtResource("15_mj6ii")
+
+[node name="LivingroomDoor" type="Sprite2D" parent="." unique_id=1873717011]
+position = Vector2(-1342.9088, 156.97795)
+scale = Vector2(7.6977587, 6.3417788)
+texture = ExtResource("15_joy5l")
+
+[node name="BathroomDoor" type="Sprite2D" parent="." unique_id=1767215222]
+material = SubResource("ShaderMaterial_5pyll")
+position = Vector2(1364.8358, 157.58432)
+scale = Vector2(7.6977577, 6.6197033)
+texture = ExtResource("15_joy5l")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=108156605]
+
+[node name="interact button" type="Button" parent="CanvasLayer" unique_id=404131764]
+visible = false
+offset_left = 506.0
+offset_top = 385.0
+offset_right = 650.0
+offset_bottom = 427.0
+text = "E Interact
+"
+
+[node name="Choice Panel" type="Panel" parent="CanvasLayer" unique_id=2059952889]
+visible = false
+offset_left = 228.0
+offset_top = 445.0
+offset_right = 932.0
+offset_bottom = 650.0
+size_flags_vertical = 8
+mouse_filter = 2
+
+[node name="HC button1" type="Button" parent="CanvasLayer/Choice Panel" unique_id=1027848989]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 1.0
+offset_right = 162.0
+offset_bottom = 147.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Choice Panel/HC button1" unique_id=757111257]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 7.0
+offset_right = 120.0
+offset_bottom = 139.0
+
+[node name="Housechore images" type="TextureRect" parent="CanvasLayer/Choice Panel/HC button1/VBoxContainer" unique_id=532958477]
+layout_mode = 2
+texture = ExtResource("17_s8sbf")
+expand_mode = 5
+
+[node name="Label" type="Label" parent="CanvasLayer/Choice Panel/HC button1/VBoxContainer" unique_id=1992132973]
+layout_mode = 2
+text = "Housechores"
+horizontal_alignment = 1
+
+[node name="WTV button2" type="Button" parent="CanvasLayer/Choice Panel" unique_id=1453775536]
+layout_mode = 0
+offset_left = 186.0
+offset_top = 1.0
+offset_right = 337.0
+offset_bottom = 146.0
+
+[node name="Tv image" type="TextureRect" parent="CanvasLayer/Choice Panel/WTV button2" unique_id=1903140031]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 33.0
+offset_right = 113.0
+offset_bottom = 95.0
+texture = ExtResource("18_nrb5j")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Choice Panel/WTV button2" unique_id=1033596159]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 117.0
+offset_right = 149.0
+offset_bottom = 140.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Choice Panel/WTV button2/VBoxContainer" unique_id=1799835674]
+layout_mode = 2
+text = "Watch TV"
+horizontal_alignment = 1
+
+[node name="Eat button3" type="Button" parent="CanvasLayer/Choice Panel" unique_id=1976917825]
+layout_mode = 0
+offset_left = 364.0
+offset_top = 1.0
+offset_right = 510.0
+offset_bottom = 146.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Choice Panel/Eat button3" unique_id=1082726389]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 7.0
+offset_right = 124.0
+offset_bottom = 140.0
+
+[node name="Eat image" type="TextureRect" parent="CanvasLayer/Choice Panel/Eat button3/VBoxContainer" unique_id=1625933503]
+layout_mode = 2
+texture = ExtResource("19_is08k")
+expand_mode = 5
+
+[node name="Label" type="Label" parent="CanvasLayer/Choice Panel/Eat button3/VBoxContainer" unique_id=533898144]
+layout_mode = 2
+text = "Eat"
+horizontal_alignment = 1
+
+[node name="BB button4" type="Button" parent="CanvasLayer/Choice Panel" unique_id=1180971931]
+layout_mode = 0
+offset_left = 537.0
+offset_top = 1.0
+offset_right = 680.0
+offset_bottom = 146.0
+
+[node name="BB image" type="TextureRect" parent="CanvasLayer/Choice Panel/BB button4" unique_id=1787795869]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 9.0
+offset_right = 118.0
+offset_bottom = 132.0
+theme = SubResource("Theme_mogh0")
+texture = ExtResource("20_5m0m6")
+expand_mode = 4
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Choice Panel/BB button4" unique_id=525181148]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 117.0
+offset_right = 124.0
+offset_bottom = 140.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Choice Panel/BB button4/VBoxContainer" unique_id=1347758988]
+layout_mode = 2
+text = "Bath"
+horizontal_alignment = 1
+
+[node name="Back button" type="Button" parent="CanvasLayer/Choice Panel" unique_id=1664538699]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -76.5
+offset_top = 51.5
+offset_right = 79.5
+offset_bottom = 93.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "< back"
+
+[node name="EatButton" type="Button" parent="CanvasLayer" unique_id=270440984]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -66.0
+offset_top = 59.0
+offset_right = 74.0
+offset_bottom = 110.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "E Eat"
+
+[node name="WatchButton" type="Button" parent="CanvasLayer" unique_id=1827997521]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -415.0
+offset_top = 67.0
+offset_right = -262.0
+offset_bottom = 118.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "E Watch"
+
+[node name="HCbutton" type="Button" parent="CanvasLayer" unique_id=107082742]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 258.0
+offset_top = 76.0
+offset_right = 428.0
+offset_bottom = 127.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "E Clean"
+
+[node name="BBButton" type="Button" parent="CanvasLayer" unique_id=1709137436]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 401.0
+offset_top = 95.0
+offset_right = 578.0
+offset_bottom = 146.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "E Bath"
+
+[node name="DayTimePanel" type="Panel" parent="CanvasLayer" unique_id=765310984]
+offset_right = 271.0
+offset_bottom = 74.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/DayTimePanel" unique_id=263415534]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="DayLabel" type="Label" parent="CanvasLayer/DayTimePanel/VBoxContainer" unique_id=1752857487]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Day 1"
+
+[node name="TimeLabel" type="Label" parent="CanvasLayer/DayTimePanel/VBoxContainer" unique_id=1480251898]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Remaining Time: 3:00"
+
+[node name="DeskArea" type="Area2D" parent="." unique_id=965299387]
+position = Vector2(162.2121, 110.160095)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeskArea" unique_id=760935710]
+visible = false
+position = Vector2(-391.7044, 63.379982)
+scale = Vector2(0.99999976, 1)
+shape = SubResource("RectangleShape2D_pd0i2")
+
+[node name="EatArea" type="Area2D" parent="." unique_id=1561421442]
+position = Vector2(162.2121, 110.160095)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EatArea" unique_id=1358164677]
+visible = false
+position = Vector2(-458.2257, 63.72458)
+scale = Vector2(1.0000002, 1.0000002)
+shape = SubResource("RectangleShape2D_pd0i2")
+
+[node name="Player" parent="." unique_id=392750223 instance=ExtResource("9_jm2cs")]
+position = Vector2(-770.2322, 96.783424)
+script = ExtResource("15_6utvc")
+
+[node name="WatchArea" type="Area2D" parent="." unique_id=374905471]
+visible = false
+position = Vector2(162.2121, 110.160095)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WatchArea" unique_id=1933308613]
+position = Vector2(-1083.3772, 63.72458)
+scale = Vector2(1.0000005, 1.0000002)
+shape = SubResource("RectangleShape2D_pd0i2")
+
+[node name="HCArea" type="Area2D" parent="." unique_id=59206171]
+visible = false
+position = Vector2(162.2121, 110.160095)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HCArea" unique_id=1734810001]
+position = Vector2(358.20325, 63.72458)
+scale = Vector2(1.0000005, 1.0000002)
+shape = SubResource("RectangleShape2D_pd0i2")
+
+[node name="BBArea" type="Area2D" parent="." unique_id=1454875585]
+visible = false
+position = Vector2(162.2121, 110.160095)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BBArea" unique_id=254762128]
+position = Vector2(750.0896, 63.72458)
+scale = Vector2(1.0000005, 1.0000002)
+shape = SubResource("RectangleShape2D_pd0i2")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1206747554]
+visible = false
+
+[node name="Left Wall" type="CollisionShape2D" parent="StaticBody2D" unique_id=126061967]
+position = Vector2(-1807.9376, -20.179111)
+scale = Vector2(1, 1.0000002)
+shape = SubResource("RectangleShape2D_s8sbf")
+
+[node name="Right Wall" type="CollisionShape2D" parent="StaticBody2D" unique_id=1681537876]
+position = Vector2(1091.4576, -31.144371)
+scale = Vector2(1, 1.0000002)
+shape = SubResource("RectangleShape2D_nrb5j")
+
+[connection signal="pressed" from="CanvasLayer/interact button" to="." method="_on_interact_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Choice Panel/HC button1" to="." method="_on_hc_button_1_pressed"]
+[connection signal="pressed" from="CanvasLayer/Choice Panel/WTV button2" to="." method="_on_wtv_button_2_pressed"]
+[connection signal="pressed" from="CanvasLayer/Choice Panel/Eat button3" to="." method="_on_eat_button_3_pressed"]
+[connection signal="pressed" from="CanvasLayer/Choice Panel/BB button4" to="." method="_on_bb_button_4_pressed"]
+[connection signal="pressed" from="CanvasLayer/Choice Panel/Back button" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/EatButton" to="." method="_on_eat_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/WatchButton" to="." method="_on_watch_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HCbutton" to="." method="_on_h_cbutton_pressed"]
+[connection signal="pressed" from="CanvasLayer/BBButton" to="." method="_on_bb_button_pressed"]
+[connection signal="body_entered" from="DeskArea" to="." method="_on_desk_area_body_entered"]
+[connection signal="body_exited" from="DeskArea" to="." method="_on_desk_area_body_exited"]
+[connection signal="body_entered" from="EatArea" to="." method="_on_eat_area_body_entered"]
+[connection signal="body_exited" from="EatArea" to="." method="_on_eat_area_body_exited"]
+[connection signal="body_entered" from="WatchArea" to="." method="_on_watch_area_body_entered"]
+[connection signal="body_exited" from="WatchArea" to="." method="_on_watch_area_body_exited"]
+[connection signal="body_entered" from="HCArea" to="." method="_on_hc_area_body_entered"]
+[connection signal="body_exited" from="HCArea" to="." method="_on_hc_area_body_exited"]
+[connection signal="body_entered" from="BBArea" to="." method="_on_bb_area_body_entered"]
+[connection signal="body_exited" from="BBArea" to="." method="_on_bb_area_body_exited"]
